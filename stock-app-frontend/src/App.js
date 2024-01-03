@@ -5,7 +5,9 @@ import StockCard from './StockCard';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 
+
 const App = () => {
+
   const [n, setN] = useState(1);
   const [stocks, setStocks] = useState([]);
 
@@ -62,13 +64,18 @@ const App = () => {
 
       <Grid container spacing={3}>
         {stocks.slice(0, n).map(stock => (
-          <Grid item xs={12} sm={6} md={4} lg={3} xl={3} key={stock.symbol}>
+          <Grid item xs={12} key={stock.symbol}>
             <StockCard stock={stock} />
           </Grid>
         ))}
       </Grid>
+
     </Container>
   );
 };
 
 export default App;
+
+
+
+
