@@ -4,12 +4,12 @@ import { Card, CardContent, Typography } from '@mui/material';
 const StockCard = ({ stock }) => {
 
     const cardStyle = {
-        backgroundColor: '#fff', // white background
-        color: '#424242', // dark gray text
-        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', // subtle shadow
+        backgroundColor: '#fff',
+        color: '#424242',
+        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
         margin: '10px',
         padding: '15px',
-        borderRadius: '8px', // slightly rounded corners
+        borderRadius: '8px',
     };
 
     const priceChange = stock.currentPrice - stock.openPrice;
